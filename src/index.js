@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter , RouterProvider} from "react-router-dom";
 // import { Provider } from "react-redux";
-import cark from "./public/wheel_for_error.png";
+import cark from "./public/logo.gif"
 
 import React from "react";
 import { Link } from "react-router-dom";
