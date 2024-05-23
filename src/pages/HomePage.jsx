@@ -7,7 +7,8 @@ import Navbar from "../components/Navbar";
 import ScrollAnimationComponent from '../components/ScrollAnimationComponent';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
+// src\public\RunningOrange.png
+import orange_rush_logo from "../public/RunningOrange.png";
 
 const slides = [
      
@@ -85,7 +86,7 @@ export default function HomePage(){
                     </span>
                </div>
                <div className='flex justify-center mt-1'> 
-               <ScrollAnimationComponent><img src="https://cdn.discordapp.com/attachments/1218189321580843068/1234958790541967481/RunningOrange.png?ex=664ef8c0&is=664da740&hm=5e0369d853e6b96480a473c31d016ab0c76ee7426afddb1d5556f1d1324c8ee7&" className='w-64' alt="logo_orange_rush_game" /></ScrollAnimationComponent>
+               <ScrollAnimationComponent><img src={orange_rush_logo} className='w-64' alt="logo_orange_rush_game" /></ScrollAnimationComponent>
                     
                </div>
                <div className='mt-32 md:hidden'>
