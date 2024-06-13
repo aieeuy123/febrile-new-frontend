@@ -13,7 +13,10 @@ body{
   --accent: var(--black);
 
 }
-
+html{
+     scrollbar-color: transparent transparent ;
+     
+   }
 .main_{
      
      /* From https://css.glass */

@@ -55,7 +55,7 @@ export default function Navbar({isBlack}){
           <span className="p-2 text-3xl text-white transition-all xl:hidden material-symbols-outlined main rounded-xl hover:bg-gray-600">search</span>
           <button className="items-center hidden p-2 font-semibold text-center text-white transition-all main rounded-xl md:flex hover:bg-gray-600"><Link to="/account"><span class="material-symbols-outlined hidden p-1 md:w-9 md:block ">account_circle</span></Link></button>
           <button className="hidden p-2 transition-all main rounded-xl md:block hover:bg-gray-600"><Link to="/cart"><span class="material-symbols-outlined md:block hidden text-3xl text-white ">shopping_cart</span></Link></button> 
-          <button onClick={()=>{mSetStatus(!mIsOpen)}} className="p-2 transition-all main rounded-xl hover:bg-gray-600"><span class="material-symbols-outlined text-3xl text-white">menu</span></button>
+          <button onClick={()=>{mSetStatus(!mIsOpen) }} className="p-2 transition-all main rounded-xl hover:bg-gray-600"><span class="material-symbols-outlined text-3xl text-white">menu</span></button>
      </div>
 </nav>
      
@@ -65,7 +65,7 @@ export default function Navbar({isBlack}){
           
           {/* menu sidebar */}
           {<div style={{opacity:(mIsOpen?1:0),transition:"opacity 0.5s ease-in-out",visibility:(mIsOpen? "visible":"hidden")}} className="absolute z-30 justify-end w-5/6 transition-all shadow-xl right-10 top-10 md:right-10 min-h-32 shadow-zinc-950 bg-zinc-950 sm:w-96 rounded-2xl sidebar">
-               <button onClick={()=>{mSetStatus(!mIsOpen)}} className="h-12 p-2 m-2 transition-all bg-gray-900 rounded-xl hover:bg-gray-600"><span class="material-symbols-outlined text-3xl text-white">close</span></button>
+               <button onClick={()=>{mSetStatus(!mIsOpen);window.navigator.vibrate("200ms");}} className="h-12 p-2 m-2 transition-all bg-gray-900 rounded-xl hover:bg-gray-600"><span class="material-symbols-outlined text-3xl text-white">close</span></button>
 
 
                <div className="flex items-center justify-center flex-1 w-full h-full text-center" style={{transition:"opacity 0.5s ease-in-out"}}>

@@ -1,6 +1,52 @@
 import logo from '../public/logo.gif';
 import './LoginPage.css';
 import { Link } from 'react-router-dom';
+
+
+
+//client-id 836610952007-00nf8o6gjp61vn91pm3jfa9pt3ei8qvm.apps.googleusercontent.com
+// client-scret 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
+
+//client-id 836610952007-00nf8o6gjp61vn91pm3jfa9pt3ei8qvm.apps.googleusercontent.com
+// client-scret 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
+
+//client-id 836610952007-00nf8o6gjp61vn91pm3jfa9pt3ei8qvm.apps.googleusercontent.com
+// client-scret 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
+
+//client-id 836610952007-00nf8o6gjp61vn91pm3jfa9pt3ei8qvm.apps.googleusercontent.com
+// client-scret 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
+
+//------------------------------------TEST REDUX USING------------------------------|
+// import { useEffect } from "react";                                               |
+// //test mode imports                                                              |
+// import { useSelector,useDispatch} from "react-redux";                            |
+// import { fetchData } from "./features/actions/userActions";                      |
+// function ApiTestComponent(){                                                     |
+//   const data = useSelector((state) => state.data.data);                          |
+//   const dispatch = useDispatch();                                                |
+//                                                                                  |
+//   useEffect(() => {                                                              |
+//     dispatch(fetchData());                                                       |
+//   }, [dispatch]);                                                                |
+//                                                                                  |
+//   return (                                                                       |
+//     <div>                                                                        |
+//       {data.id ?                                                                 |
+//         (                                                                        |
+//         <pre key={data.id}>{data.title}</pre>)                                   |
+//        :(                                                                        |
+//         <p className="text-black ">Loading...</p>                                |
+//       )}                                                                         |
+//     </div>                                                                       |
+//   );                                                                             |
+// };                                                                               |
+//----------------------------------------------------------------------------------|
+
+
+
+
+
+
 export default function LoginPage(){
 
     return (
@@ -27,15 +73,16 @@ export default function LoginPage(){
              
         <div className='w-full my-10 space-y-4 text-center '>
 
-            <input type="text" className='w-5/6 px-4 py-2 rounded-lg input_' placeholder='username' />
+            <input type="text" className='w-5/6 px-4 py-2 rounded-lg input_' placeholder='email' />
             <input type="password" className='w-5/6 px-4 py-2 rounded-lg input_ ' placeholder='password' />
+
             
             
             <button className='w-5/6 p-2 font-semibold text-white transition-all rounded-xl bg-gray-950 hover:bg-gray-500'>Login</button>
             <div className='flex justify-center space-x-3'>
-                <button className='p-2 font-semibold text-white transition-all bg-white rounded-xl hover:bg-gray-950'>
+                <Link to="/google-oauth2-login" className='p-2 font-semibold text-white transition-all bg-white rounded-xl hover:bg-gray-950'>
                     <img className='w-10 h-10' src="https://png.pngtree.com/png-vector/20230817/ourmid/pngtree-google-internet-icon-vector-png-image_9183287.png" alt="" />
-                </button>
+                </Link>
                 <button className='p-2 font-semibold text-white transition-all bg-white rounded-xl hover:bg-gray-950'>
                     <img className='w-10 h-10' src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338508_1280.png" alt="" />
                 </button>
@@ -50,7 +97,7 @@ export default function LoginPage(){
 
             <Link className='block my-16 text-black transition-all hover:text-white' to="/reset-password">Forgot my password <span className='underline'>Reset Password</span></Link>
 
-            <div className='fixed md:bottom-10 md:left-10 justify-center flex w-full md:justify-start   '>
+            <div className='fixed flex justify-center w-full md:bottom-10 md:left-10 md:justify-start '>
                 <Link className='text-blue-200 transition-all hover:text-black' to="/signup">Haven't already account? <span className='underline'>Signup now</span></Link>
             </div>
        

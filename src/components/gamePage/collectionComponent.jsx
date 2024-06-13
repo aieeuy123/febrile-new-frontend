@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
 
-export default function Collections({isMobile=false}){
-    return (    <span className={`p-3 block ${isMobile? "w-1/5": "w-screen"}`} >
+export default function Collections({props = {}}){
+    return (    <span className={`p-3 block ${props.isMobile? "w-1/5": "w-screen"}`} >
 
                     <div>
 
-                        {isMobile? <h1 className="text-lg font-semibold text-white">Collections</h1>: <h1 className="text-3xl font-semibold text-white">Collections</h1>}
+                        {props.isMobile? <h1 className="text-lg font-semibold text-white">Collections</h1>: <h1 className="text-3xl font-semibold text-white">Collections</h1>}
 
                     </div>
 
@@ -27,7 +27,7 @@ export default function Collections({isMobile=false}){
 
                             <span className="w-10 text-lg font-semibold text-gray-300">+20</span>
 
-                            <Link to='/candle/collections' className="self-end w-20 text-lg font-bold text-gray-300">See more</Link>
+                            <Link to={`/${props.gameObject.title}/collections`} className="self-end w-20 text-lg font-bold text-gray-300">See more</Link>
 
                         </div>
                                    

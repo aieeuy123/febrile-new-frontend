@@ -1,7 +1,8 @@
 import { forwardRef } from "react";
 
-export const GameTitle = forwardRef(() => {
+export const GameTitle = forwardRef((props = {}) => {
     return (
-        <h1  className="block text-3xl font-semibold text-white">Candle: Find Your Spark Within</h1>
+        // Candle: Find Your Spark Within
+        <h1  className="block text-3xl font-semibold text-white">{props.gameObject.title}</h1>
     );
 });

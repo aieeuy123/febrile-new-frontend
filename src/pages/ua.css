@@ -1,0 +1,66 @@
+html{
+    scrollbar-color: white #000814;
+    
+}
+.user_profile_main_div{
+    /* From https://css.glass */
+background: rgba(54, 54, 54, 0.23);
+
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.7px);
+-webkit-backdrop-filter: blur(40px);
+border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.main___{
+    /* background-image: linear-gradient(to right, #001d46, #1c1431, #1d0c1f, #160510, #000000); */
+    /* background-image: linear-gradient(to right, #001d46, #001939, #03152d, #031020, #000814); */
+    /* background-image: linear-gradient(to left bottom, #070707, #080808, #090909, #0a0a0a, #0b0b0b); */
+    background-image: linear-gradient(to left bottom, #070707, #0c0c0c, #101010, #131313, #161616);
+    border: none;
+    border-radius: 0px;
+    
+    
+}
+.grid-item{
+    display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 80% 15% ; /*Make the grid smaller than the container*/
+  
+}
+.grid-item2{
+    display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 25% 25% 25% ; /*Make the grid smaller than the container*/
+  gap: 50px;
+  
+}
+
+.grid-item3{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 75% 25% ; /*Make the grid smaller than the container*/
+  padding: 10px;
+  gap: 10px;
+    
+    
+}
+.f_card{
+    position:sticky;
+    left: 88%;
+    bottom: 0px;
+}
+.grid-item4{
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 25%  63% 10%; /*Make the grid smaller than the container*/
+  gap:10px;
+  
+}
+
+.grid-item5{
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 25%  25% 25% 25%; /*Make the grid smaller than the container*/
+  gap:10px;
+}
